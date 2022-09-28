@@ -9,15 +9,14 @@
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 #path: ../datasets/coco  # dataset root dir
-path: F:\Datasets\CV\SIMD
-train: F:\Datasets\CV\SIMD\train2017.txt  # train images (relative to 'path') 118287 images
-val: F:\Datasets\CV\SIMD\val2017.txt  # train images (relative to 'path') 5000 images
+path: dataset/hat_detection
+train: dataset/hat_detection/train.txt  # train images (relative to 'path') 118287 images
+val: dataset/hat_detection/val.txt  # train images (relative to 'path') 5000 images
 #test: test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
 
 # Classes
-nc: 15  # number of classes
-names: ['car', 'truck', 'van', 'long vehicle', 'bus', 'airliner', 'propeller aircraft', 'trainer aircraft', 'chartered aircraft', 'fighter aircraft',
-        'others', 'stair truck', 'pushback truck', 'helicopter', 'boat', ]  # class names
+nc: 3  # number of classes
+names: ['helmet', 'head', 'person', ]  # class names
 
 
 
